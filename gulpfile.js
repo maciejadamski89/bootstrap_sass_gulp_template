@@ -24,7 +24,7 @@ function copyVendorTask() {
 }
 
 function copyAssetsTask() {
-  return src('./src/assets/img/*')
+  return src('./src/assets/**/*')
   .pipe(dest(('./dest')))
 }
 
