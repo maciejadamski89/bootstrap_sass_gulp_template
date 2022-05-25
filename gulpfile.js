@@ -47,7 +47,7 @@ function watch(){
     }
   });
   gulp.watch('./src/sass/**/*.sass',sassTask);
-  gulp.watch('./src/html/**/*.pug',HTMLTask).on('change', browser_sync.reload);
+  gulp.watch('./src/html/**/*.html',HTMLTask).on('change', browser_sync.reload);
   gulp.watch('./src/js/**/*.js',JSTask).on('change', browser_sync.reload);
 
 }
